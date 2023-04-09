@@ -2,6 +2,9 @@ asgiref==3.6.0
 backports.zoneinfo==0.2.1
 Django==4.1.7
 django-environ==0.10.0
+Faker==18.4.0
 numpy==1.24.2
 pkg_resources==0.0.0
+python-dateutil==2.8.2
+six==1.16.0
 sqlparse==0.4.3
