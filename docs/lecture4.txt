@@ -15,6 +15,37 @@ https://pypi.org/project/djongo/
 https://faker.readthedocs.io/en/master/
 class Meta:
         db_table="person"
-
+https://faker.readthedocs.io/en/master/
+>>> from my_app2.models import Person
+>>> qs = Person.objects.all()
+>>> qs
+<QuerySet [<Person: Person object (1)>, <Person: Person object (2)>, <Person: Person object (3)>, <Person: Person object (4)>, <Person: Person object (5)>, <Person: Person object (6)>, <Person: Person object (7)>, <Person: Person object (8)>, <Person: Person object (9)>, <Person: Person object (10)>, <Person: Person object (11)>, <Person: Person object (12)>, <Person: Person object (13)>, <Person: Person object (14)>, <Person: Person object (15)>, <Person: Person object (16)>, <Person: Person object (17)>, <Person: Person object (18)>, <Person: Person object (19)>, <Person: Person object (20)>, '...(remaining elements truncated)...']>
+>>> print(qs.query)
+SELECT "my_app2_person"."id", "my_app2_person"."fname", "my_app2_person"."lname", "my_app2_person"."age", "my_app2_person"."email", "my_app2_person"."gender" FROM "my_app2_person"
+>>> Person.objects.get(id=2)
+<Person: Person object (2)>
+>>> x = Person.objects.get(id=2)
+>>> x.__dict__
+{'_state': <django.db.models.base.ModelState object at 0x7fd0555de070>, 'id': 2, 'fname': 'Deanna', 'lname': 'Hayes', 'age': 23, 'email': 'marymcclain@example.com', 'gender': 'F'}
+>>> x
+<Person: Person object (2)>
+>>> x.fname
+'Deanna'
+>>> x.lname
+'Hayes'
+>>> x.__dict__
+{'_state': <django.db.models.base.ModelState object at 0x7fd0555de070>, 'id': 2, 'fname': 'Deanna', 'lname': 'Hayes', 'age': 23, 'email': 'marymcclain@example.com', 'gender': 'F'}
+>>> y = Person.objects.filter(age__gte=80)
+>>> y
+<QuerySet [<Person: Person object (14)>, <Person: Person object (18)>, <Person: Person object (21)>, <Person: Person object (27)>, <Person: Person object (28)>, <Person: Person object (39)>, <Person: Person object (44)>, <Person: Person object (46)>, <Person: Person object (48)>, <Person: Person object (56)>, <Person: Person object (57)>, <Person: Person object (62)>, <Person: Person object (63)>, <Person: Person object (69)>, <Person: Person object (75)>, <Person: Person object (90)>, <Person: Person object (91)>, <Person: Person object (100)>, <Person: Person object (102)>, <Person: Person object (107)>, '...(remaining elements truncated)...']>
+>>> y.count()
+379
+>>> print(y.query)
+SELECT "my_app2_person"."id", "my_app2_person"."fname", "my_app2_person"."lname", "my_app2_person"."age", "my_app2_person"."email", "my_app2_person"."gender" FROM "my_app2_person" WHERE "my_app2_person"."age" >= 80
+>>> z = Person.objects.filter(age=80)
+>>> z.count()
+14
+>>> print(z.query)
+SELECT "my_app2_person"."id", "my_app2_person"."fname", "my_app2_person"."lname", "my_app2_person"."age", "my_app2_person"."email", "my_app2_person"."gender" FROM "my_app2_person" WHERE "my_app2_person"."age" = 80
 
 -------------------------- LECTURE 4 ------------------------

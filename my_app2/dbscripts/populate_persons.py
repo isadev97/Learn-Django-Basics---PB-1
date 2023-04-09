@@ -9,7 +9,6 @@ from faker import Faker
 from my_app2.models import Person
 import random
 
-
 class PopulatePersons:
 
     def __init__(self):
