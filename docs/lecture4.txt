@@ -1,0 +1,20 @@
+
+
+rds        pythonic / django
+tables       models
+columns        fields
+https://docs.djangoproject.com/en/4.2/topics/db/models/
+https://docs.djangoproject.com/en/4.2/ref/models/fields/#model-field-types
+https://docs.djangoproject.com/en/4.2/ref/models/fields/
+python3 manage.py showmigrations
+python3 manage.py makemigrations
+python3 manage.py migrate 
+python3 manage.py migrate <app_name>
+optionally you can give app name in above commands
+https://pypi.org/project/djongo/
+https://faker.readthedocs.io/en/master/
+class Meta:
+        db_table="person"
+
+
+-------------------------- LECTURE 4 ------------------------

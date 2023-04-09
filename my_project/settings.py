@@ -17,8 +17,6 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-print("base DIR ******", BASE_DIR)
-
 env = environ.Env()
 
 # Take environment variables from .env file
@@ -34,8 +32,6 @@ SECRET_KEY = env('SECRET_KEY')
 DEBUG = env('DEBUG') == 'on' # True in development but False in production
 
 ALLOWED_HOSTS = ["*"]
-
-print("printing env variables", env('DEBUG'), env('SECRET_KEY'))
 
 # Application definition
 
