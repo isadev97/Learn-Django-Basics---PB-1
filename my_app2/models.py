@@ -13,7 +13,8 @@ class Person(models.Model):
     lname = models.CharField(max_length=50)
     age = models.IntegerField(default=0, null=True)
     email = models.EmailField()
-    gender = models.CharField(max_length=1, choices=GENDER)
     
     # class Meta:
-        # db_table="person"
+    #     db_table="person"
+        
+        

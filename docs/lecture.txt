@@ -49,3 +49,19 @@ SELECT "my_app2_person"."id", "my_app2_person"."fname", "my_app2_person"."lname"
 SELECT "my_app2_person"."id", "my_app2_person"."fname", "my_app2_person"."lname", "my_app2_person"."age", "my_app2_person"."email", "my_app2_person"."gender" FROM "my_app2_person" WHERE "my_app2_person"."age" = 80
 
 -------------------------- LECTURE 4 ------------------------
+
+
+
+------------------- LECTURE 5 ---------------
+
+showmigrations
+makemigrations
+migrate
+
+table_name = <appname>_<model_name> django automatic convention
+custom table name = class meta 
+
+                        table_name = 
+python3 manage.py showmigrations my_app2
+python3 manage.py makemigrations my_app2
+python3 manage.py migrate my_app2
