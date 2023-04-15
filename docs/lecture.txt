@@ -112,4 +112,8 @@ python3 manage.py migrate my_app_name 002
 004 - rolled back
 005 - rolled back
 
-
+python3 manage.py runserver
+http://localhost:8000/
+http://localhost:8000/admin/login/?next=/admin/
+python manage.py createsuperuser
+http://localhost:8000/admin/

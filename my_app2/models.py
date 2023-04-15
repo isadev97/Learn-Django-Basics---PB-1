@@ -16,6 +16,8 @@ class Person(models.Model):
     age = models.IntegerField(default=0, null=True)
     email = models.EmailField()
     gender = models.IntegerField(choices=GENDER, default=GENDER.male)
+    
+    # use meta class for custom table name
     # class Meta:
     #     db_table="person"
         

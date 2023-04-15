@@ -23,6 +23,7 @@ class PopulatePersons:
                 lname=fake.last_name(),
                 age=random.randrange(1, 99),
                 gender=random.choice([Person.GENDER.male, Person.GENDER.female, Person.GENDER.others]),
+                # gender=random.choice([1, 2 ,3]),
                 email=fake.email(),
             )
             print(person_obj)
