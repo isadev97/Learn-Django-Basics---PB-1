@@ -7,3 +7,6 @@ def hi_world():
 
 def hello_world_replica():
     return "hello world"
+
+def hello_world(request):
+    return render(request, "hello_world.html")
