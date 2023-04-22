@@ -117,3 +117,24 @@ http://localhost:8000/
 http://localhost:8000/admin/login/?next=/admin/
 python manage.py createsuperuser
 http://localhost:8000/admin/
+
+
+------ LECTURE 6 ---------
+
+
+https://github.com/isadev97/Django-Passwordkeeper
+
+
+DJANGO WITH TEMPLATES
+SINGLE SERVER - FRONTEND AND BACKEND 
+HTML PAGES
+MONOLITHIC 
+
+
+
+DJANGO REST FRAMEWORK
+BACKEND - DJANGO REST FRAMEWORK (JSON RESPONSE)
+FRONTEND - IOS / ANDROID / REACT / ANGULAR / HTML PAGES
+2 servers
+MICROSERVICES
+
