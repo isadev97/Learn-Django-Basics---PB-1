@@ -130,7 +130,9 @@ SINGLE SERVER - FRONTEND AND BACKEND
 HTML PAGES
 MONOLITHIC 
 
-
+git rm -r --cached .
+git add .
+git commit -m ".gitignore is now working"
 
 DJANGO REST FRAMEWORK
 BACKEND - DJANGO REST FRAMEWORK (JSON RESPONSE)
