@@ -12,5 +12,27 @@
     <h3>My name is {{name}} </h3>
     <h3>My tech stack is {{tech_stack}}</h3>
     <h3>My role is {{role}}</h3>
+    <h3>Person List where id <= 10</h3>
+    <ul>
+        {% for person in person_list %}
+            <li>{{ person.fname }}</li>
+        {% endfor %}
+    </ul>
+    <h3>Top 10 oldest person</h3>
+    {% if show_oldest_person %}
+        <ul>
+            {% for person in oldest_person_list %}
+                <li>{{ person.fname }} - {{ person.age }} </li>
+            {% endfor %}
+        </ul>
+    
+    {% endif %}
+  
+    {% comment %} 
+    <ul>
+        <li></li>
+        <li></li>
+    </ul> 
+    {% endcomment %}
 </body>
 </html>

@@ -12,14 +12,15 @@ def hello_world_replica():
     return "hello world"
 
 def hello_world(request):
+    show_oldest_person = False
     my_data = {
         "name" : "Ishjot",
         "tech_stack" : "Python",
-        "role" : "Software developer"
+        "role" : "Software developer",
+        "person_list": Person.objects.filter(id__lte=10),
+        "oldest_person_list" :  Person.objects.all().order_by('-age')[:10] if show_oldest_person else []
     }
     return render(request, "hello_world.html", my_data)
-
-
 
 def person_info(request, encrypted_id):
     hashids = Hashids(salt=settings.PRIVATE_KEY)
