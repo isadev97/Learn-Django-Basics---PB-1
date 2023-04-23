@@ -141,3 +141,18 @@ FRONTEND - IOS / ANDROID / REACT / ANGULAR / HTML PAGES
 MICROSERVICES
 
 https://www.w3schools.com/django/ref_tags_extends.php
+
+
+-------------- LECTURE 7 --------------
+
+
+ORM => SQL
+object in django ORM => SQL row
+C - CREATE an object means (.create) => create a row (INSERT)
+R - READ - get an objects (.get) => read a row (SELECT)
+U - UPDATE - edit the object(.update / assignment property)   UPDATE a row (UPDATE)
+D - DELETE -  delete the object (.delete)=> DELETE a row (DELETE)
+
+
+# fetch the data by primary key => .get()
+# fetch the data without primary key => .filter()
