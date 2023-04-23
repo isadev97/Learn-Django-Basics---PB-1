@@ -156,3 +156,7 @@ D - DELETE -  delete the object (.delete)=> DELETE a row (DELETE)
 
 # fetch the data by primary key => .get()
 # fetch the data without primary key => .filter()
+
+python3 manage.py startapp todo_app
+
+
