@@ -162,3 +162,6 @@ python3 manage.py startapp todo_app
 https://getbootstrap.com/docs/5.3/getting-started/introduction/
 
 
+python3 manage.py makemigrations todo_app
+python3 manage.py migrate todo_app
+
