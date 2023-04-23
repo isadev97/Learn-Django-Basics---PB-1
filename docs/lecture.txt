@@ -159,4 +159,6 @@ D - DELETE -  delete the object (.delete)=> DELETE a row (DELETE)
 
 python3 manage.py startapp todo_app
 
+https://getbootstrap.com/docs/5.3/getting-started/introduction/
+
 
