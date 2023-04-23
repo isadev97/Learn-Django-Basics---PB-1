@@ -17,4 +17,8 @@ class Todo(models.Model):
     class Meta:
         db_table="todos"
         
+    # choices 
+    # todo.status == 1 
+    # todo.status == Todo.STATUS_CHOICES.pending
+        
         
