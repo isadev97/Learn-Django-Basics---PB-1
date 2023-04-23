@@ -8,7 +8,9 @@
   </head>
   <body>
     <h1>Todo App</h1>
-    <form>
+    {% comment %} <form method="POST" action="/todo-app/add-todo/" > {% endcomment %}
+    <form method="POST" action="{% url 'add_todo' %}" >
+      {% csrf_token %}
       <div class="mb-3">
         <label for="todo_title" class="form-label">Todo Title</label>
         <input type="text" class="form-control" name="todo_title" placeholder="Enter your title here ..." id="todo_title" />
@@ -20,6 +22,9 @@
       <div class="card" style="width: 18rem;">
         <div class="card-body">
           <h5 class="card-title">{{todo.title}}</h5>
+          <p class="card-text">Created on {{todo.created_at}}</p>
+        </div>
+      
         </div>
       </div>
     {% endfor %}

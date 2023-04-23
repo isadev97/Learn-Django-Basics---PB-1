@@ -132,4 +132,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 PRIVATE_KEY = env('PRIVATE_KEY')
 
-print(PRIVATE_KEY)
+TIME_ZONE =  'Asia/Kolkata'
