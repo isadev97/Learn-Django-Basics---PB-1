@@ -165,3 +165,8 @@ https://getbootstrap.com/docs/5.3/getting-started/introduction/
 python3 manage.py makemigrations todo_app
 python3 manage.py migrate todo_app
 
+
+------------------- Lecture 8 ----------------------
+https://docs.djangoproject.com/en/4.2/topics/testing/overview/
+https://www.django-rest-framework.org/api-guide/testing/
+
